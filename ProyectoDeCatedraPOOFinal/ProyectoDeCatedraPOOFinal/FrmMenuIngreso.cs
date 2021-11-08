@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoDeCatedraPOOFinal
 {
-    public partial class Form1 : Form
+    public partial class FrmMenuIngreso: Form
     {
-        public Form1()
+        public FrmMenuIngreso()
         {
             InitializeComponent();
         }

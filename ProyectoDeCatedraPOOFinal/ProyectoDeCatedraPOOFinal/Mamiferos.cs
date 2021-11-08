@@ -21,24 +21,38 @@ namespace ProyectoDeCatedraPOOFinal
 
     class Mamiferos : Animales
     {
-        //Atributos unicos
-        private int cantmamas;
-        private bool subcate; //Para saber si son viviparos o no
+        //Atributos para la clase de animales Mamíferos
+        private int cantMamas;
+        private string colorPelo; //Para los que aplique
 
         //Propiedades con su validación
-
-        public int Cantmamas
+        public int CantMamas
         {
-            get { return cantmamas; }
+            get { return cantMamas; }
             set
             {
-                cantmamas = value;
-                if (Convert.ToString(cantmamas) == "")
+                cantMamas = value;
+                if (Convert.ToString(cantMamas) == "")
                 {
-                    throw new Exception("Debe indicar la cantidad de mamas que posee el animal");
+                    throw new Exception("Debe indicar la cantidad de mamas del mamífero");
+                }
+                if(cantMamas <= 0)
+                {
+                    throw new Exception("La cantidad de mamas del mamífero debe ser mayor a 0");
                 }
             }
         }
-
+        public string ColorPelo
+        {
+            get { return colorPelo; }
+            set
+            {
+                colorPelo = value;
+                if (Convert.ToString(colorPelo) == "")
+                {
+                    throw new Exception("Debe indicar el color del pelo del mamífero");
+                }
+            }
+        }
     }
 }
