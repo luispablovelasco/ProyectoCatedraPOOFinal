@@ -21,40 +21,42 @@ namespace ProyectoDeCatedraPOOFinal
 
     class Reptiles : Animales
     {
-
-        private string tiporesp; //Los reptiles pueden tener respiracion pulmonar o cutanea (Por medio de la piel)
-        private int cantfosas; 
-
-        /*Los reptiles se clasifican me diante la cantidad de fosas temporales en el craneo, pueden ser:
-          - Sinapsidos: Con solo 1 fosa temporal
-          - Anapsidos: Con ninguna fosa temporal
-          - Diapsidos: Con dos fosas temporales
+        //Atributos para la clase de animales Reptiles
+        private string tipoResp; //Los reptiles pueden tener respiración pulmonar o cutánea (por medio de la piel)
+        private int cantFosas; 
+        /*Los reptiles se clasifican mediante la cantidad de fosas temporales en el craneo, pueden ser:
+          - Sinápsidos: Con solo 1 fosa temporal
+          - Anápsidos: Con ninguna fosa temporal
+          - Diápsidos: Con dos fosas temporales
         */
 
         //Propiedades con sus validaciones
-
-        public string Tiporesp
+        public string TipoResp
         {
-            get { return tiporesp; }
+            get { return tipoResp; }
             set
             {
-                tiporesp = value;
-                if (tiporesp == "")
+                tipoResp = value;
+                if (tipoResp == "")
                 {
-                    throw new Exception("Debe ingresar el tipo de respiración del repltil");
+                    throw new Exception("Debe indicar el tipo de respiración del reptil");
                 }
             }
         }
 
-        public int Cantfosas
+        public int CantFosas
         {
-            get { return cantfosas; }
+            get { return cantFosas; }
             set
             {
-                cantfosas = value;
-                if (Convert.ToString(cantfosas) == "")
+                cantFosas = value;
+                if (Convert.ToString(cantFosas) == "")
                 {
-                    throw new Exception("Ingrese el numero de fosas que posee el reptil por favor");
+                    throw new Exception("Debe indicar el número de fosas que posee el reptil");
+                }
+                if (cantFosas < 0)
+                {
+                    throw new Exception("La cantidad de fosas temporales del reptil no puede ser menor a 0");
                 }
             }
         }
