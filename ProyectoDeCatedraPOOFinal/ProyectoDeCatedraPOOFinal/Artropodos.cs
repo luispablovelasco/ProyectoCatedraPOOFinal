@@ -21,23 +21,43 @@ namespace ProyectoDeCatedraPOOFinal
 
     class Artropodos : Animales
     {
-        //Atributos para la clase de anumales Artropodos
-
-        private bool veneno = false; //Esto indicará si el animal posee alguna clase de veneno
-        private int cantpatas; 
+        //Atributos para la clase de animales Artrópodos
+        private string tiposApendices; 
+        /*Los tipos de apéndices pueden ser:
+            antenas, antenulas, gnatopodios, hileras, peines, labio,
+            mandíbulas, maxilas, maxilípedos, masillas, ovejeros, patas,
+            pedipalpos, periópodos, leopoldos, quelíceros, quilíferos,
+            toracópodos, uro podios, abdómenes
+         */
+        private int cantApendices; 
 
 
         //Propiedades con su validación
-
-        public int Cantpatas
+        public int CantApendices
         {
-            get { return cantpatas; }
+            get { return cantApendices; }
             set
             {
-                cantpatas = value;
-                if (Convert.ToString(cantpatas) == "")
+                cantApendices = value;
+                if (Convert.ToString(cantApendices) == "")
                 {
-                    throw new Exception("Debe de colocar la cantidad de patas del insecto");
+                    throw new Exception("Debe indicar la cantidad de apéndices del insecto");
+                }
+                if (cantApendices < 0)
+                {
+                    throw new Exception("La cantidad de apéndices no puede ser menor a 0");
+                }
+            }
+        }
+        public string TiposApendices
+        {
+            get { return tiposApendices; }
+            set
+            {
+                tiposApendices = value;
+                if (Convert.ToString(tiposApendices) == "")
+                {
+                    throw new Exception("Debe indicar el tipo de apéndices del insecto");
                 }
             }
         }

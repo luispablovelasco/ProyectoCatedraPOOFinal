@@ -21,36 +21,36 @@ namespace ProyectoDeCatedraPOOFinal
 
     class Peces : Animales
     {
-        //Atributos 
+        //Atributos para la clase de animales Peces
+        private int cantAletas;
+        private string tipoBranquias; //Solamente existen 2 tipos de branquias: externas e internas
 
-        private int cantaletas;
-        private string tipobranqueas; //Solamente existen 2 tipos de branqueas: Externas e Internas
-
-
-        //Propiedades con Su validación
-
-        public int Cantaletas
+        //Propiedades con su validación
+        public int CantAletas
         {
-            get { return cantaletas; }
+            get { return cantAletas; }
             set
             {
-                cantaletas = value;
-                if (Convert.ToString(cantaletas) == "")
+                cantAletas = value;
+                if (Convert.ToString(cantAletas) == "")
                 {
-                    throw new Exception("Por vafor ingrese el numero de branqueas del pez");
+                    throw new Exception("Debe indicar el número de aletas del pez");
+                }
+                if (cantAletas < 0)
+                {
+                    throw new Exception("La cantidad de aletas del pez no puede ser menor a 0");
                 }
             }
         }
-
-        public string Tipobranqueas
+        public string TipoBranquias
         {
-            get { return tipobranqueas; }
+            get { return tipoBranquias; }
             set
             {
-                tipobranqueas = value;
-                if (tipobranqueas == "")
+                tipoBranquias = value;
+                if (tipoBranquias == "")
                 {
-                    throw new Exception("Ingrerse el tipo de branqueas del pez");
+                    throw new Exception("Debe indicar el tipo de branquias del pez");
                 }
             }
         }
