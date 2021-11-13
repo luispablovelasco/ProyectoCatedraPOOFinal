@@ -34,8 +34,8 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnReptiles = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMamiferos = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnPeces = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnArtropodos = new Bunifu.Framework.UI.BunifuTileButton();
@@ -44,9 +44,10 @@ namespace ProyectoDeCatedraPOOFinal
             this.reptilesElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pecesElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.artropodosElipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnVolverMenu = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnReptiles
@@ -75,8 +76,8 @@ namespace ProyectoDeCatedraPOOFinal
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 1;
             this.bunifuGradientPanel1.Controls.Add(this.label1);
-            this.bunifuGradientPanel1.Controls.Add(this.pictureBox2);
-            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.btnMinimizar);
+            this.bunifuGradientPanel1.Controls.Add(this.btnCerrar);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(229)))), ((int)(((byte)(100)))));
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(238)))), ((int)(((byte)(96)))));
@@ -97,29 +98,31 @@ namespace ProyectoDeCatedraPOOFinal
             this.label1.TabIndex = 4;
             this.label1.Text = "Ingreso de animales";
             // 
-            // pictureBox2
+            // btnMinimizar
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(482, 5);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(482, 5);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMinimizar.TabIndex = 3;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // pictureBox1
+            // btnCerrar
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(522, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(522, 5);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(30, 30);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCerrar.TabIndex = 2;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnMamiferos
             // 
@@ -203,11 +206,38 @@ namespace ProyectoDeCatedraPOOFinal
             this.artropodosElipse.ElipseRadius = 25;
             this.artropodosElipse.TargetControl = this.btnArtropodos;
             // 
+            // btnVolverMenu
+            // 
+            this.btnVolverMenu.ActiveBorderThickness = 1;
+            this.btnVolverMenu.ActiveCornerRadius = 20;
+            this.btnVolverMenu.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(170)))), ((int)(((byte)(40)))));
+            this.btnVolverMenu.ActiveForecolor = System.Drawing.Color.White;
+            this.btnVolverMenu.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(170)))), ((int)(((byte)(40)))));
+            this.btnVolverMenu.BackColor = System.Drawing.SystemColors.Control;
+            this.btnVolverMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVolverMenu.BackgroundImage")));
+            this.btnVolverMenu.ButtonText = "Volver al menú";
+            this.btnVolverMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVolverMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolverMenu.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnVolverMenu.IdleBorderThickness = 1;
+            this.btnVolverMenu.IdleCornerRadius = 20;
+            this.btnVolverMenu.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(156)))), ((int)(((byte)(29)))));
+            this.btnVolverMenu.IdleForecolor = System.Drawing.Color.White;
+            this.btnVolverMenu.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(156)))), ((int)(((byte)(29)))));
+            this.btnVolverMenu.Location = new System.Drawing.Point(388, 594);
+            this.btnVolverMenu.Margin = new System.Windows.Forms.Padding(5);
+            this.btnVolverMenu.Name = "btnVolverMenu";
+            this.btnVolverMenu.Size = new System.Drawing.Size(164, 41);
+            this.btnVolverMenu.TabIndex = 9;
+            this.btnVolverMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnVolverMenu.Click += new System.EventHandler(this.btnVolverMenu_Click);
+            // 
             // FrmMenuIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 612);
+            this.ClientSize = new System.Drawing.Size(566, 642);
+            this.Controls.Add(this.btnVolverMenu);
             this.Controls.Add(this.btnArtropodos);
             this.Controls.Add(this.btnPeces);
             this.Controls.Add(this.btnReptiles);
@@ -215,14 +245,15 @@ namespace ProyectoDeCatedraPOOFinal
             this.Controls.Add(this.btnMamiferos);
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmMenuIngreso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMenuIngreso";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,8 +262,8 @@ namespace ProyectoDeCatedraPOOFinal
 
         private Bunifu.Framework.UI.BunifuTileButton btnReptiles;
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
         private Bunifu.Framework.UI.BunifuTileButton btnMamiferos;
         private Bunifu.Framework.UI.BunifuTileButton btnPeces;
         private Bunifu.Framework.UI.BunifuTileButton btnArtropodos;
@@ -242,5 +273,6 @@ namespace ProyectoDeCatedraPOOFinal
         private Bunifu.Framework.UI.BunifuElipse reptilesElipse;
         private Bunifu.Framework.UI.BunifuElipse pecesElipse;
         private Bunifu.Framework.UI.BunifuElipse artropodosElipse;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnVolverMenu;
     }
 }

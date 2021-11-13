@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoDeCatedraPOOFinal
 {
-    public partial class FrmMenuIngreso: Form
+    public partial class FrmVerRegistros : Form
     {
-        public FrmMenuIngreso()
+        public FrmVerRegistros()
         {
             InitializeComponent();
-        }
-
-        private void btnMinimizar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void btnVolverMenu_Click(object sender, EventArgs e)

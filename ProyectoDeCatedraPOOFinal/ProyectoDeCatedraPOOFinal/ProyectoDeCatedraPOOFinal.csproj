@@ -134,8 +134,13 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=5.3.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.3.0\lib\net40\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\..\..\Downloads\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -149,6 +154,24 @@
   <ItemGroup>
     <Compile Include="Animales.cs" />
     <Compile Include="Artropodos.cs" />
+    <Compile Include="FrmAntropodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAntropodo.Designer.cs">
+      <DependentUpon>FrmAntropodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngreso.Designer.cs">
+      <DependentUpon>FrmIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMamifero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMamifero.Designer.cs">
+      <DependentUpon>FrmMamifero.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,16 +184,58 @@
     <Compile Include="FrmMenuIngreso.Designer.cs">
       <DependentUpon>FrmMenuIngreso.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBox.Designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPez.Designer.cs">
+      <DependentUpon>FrmPez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReptil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReptil.Designer.cs">
+      <DependentUpon>FrmReptil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVerRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerRegistros.Designer.cs">
+      <DependentUpon>FrmVerRegistros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mamiferos.cs" />
     <Compile Include="Peces.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reptiles.cs" />
+    <EmbeddedResource Include="FrmAntropodo.resx">
+      <DependentUpon>FrmAntropodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngreso.resx">
+      <DependentUpon>FrmIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMamifero.resx">
+      <DependentUpon>FrmMamifero.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuIngreso.resx">
       <DependentUpon>FrmMenuIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPez.resx">
+      <DependentUpon>FrmPez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReptil.resx">
+      <DependentUpon>FrmReptil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerRegistros.resx">
+      <DependentUpon>FrmVerRegistros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

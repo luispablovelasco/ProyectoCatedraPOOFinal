@@ -77,3 +77,6 @@ C:\Users\karle\OneDrive - Universidad Don Bosco\CICLO 2\POO\ProyectoCatedraPOOFi
 C:\Users\karle\OneDrive - Universidad Don Bosco\CICLO 2\POO\ProyectoCatedraPOOFinal\ProyectoDeCatedraPOOFinal\ProyectoDeCatedraPOOFinal\obj\Debug\ProyectoDeCatedraPOOFinal.pdb
 C:\Users\karle\OneDrive - Universidad Don Bosco\CICLO 2\POO\ProyectoCatedraPOOFinal\ProyectoDeCatedraPOOFinal\ProyectoDeCatedraPOOFinal\obj\Debug\ProyectoDeCatedraPOOFinal.FrmMenu.resources
 C:\Users\karle\OneDrive - Universidad Don Bosco\CICLO 2\POO\ProyectoCatedraPOOFinal\ProyectoDeCatedraPOOFinal\ProyectoDeCatedraPOOFinal\obj\Debug\ProyectoDeCatedraPOOFinal.FrmMenuIngreso.resources
+C:\Users\karle\OneDrive - Universidad Don Bosco\CICLO 2\POO\ProyectoCatedraPOOFinal\ProyectoDeCatedraPOOFinal\ProyectoDeCatedraPOOFinal\obj\Debug\ProyectoDeCatedraPOOFinal.FrmVerRegistros.resources
+C:\Users\karle\OneDrive - Universidad Don Bosco\CICLO 2\POO\ProyectoCatedraPOOFinal\ProyectoDeCatedraPOOFinal\ProyectoDeCatedraPOOFinal\bin\Debug\Guna.UI.dll
+C:\Users\karle\OneDrive - Universidad Don Bosco\CICLO 2\POO\ProyectoCatedraPOOFinal\ProyectoDeCatedraPOOFinal\ProyectoDeCatedraPOOFinal\obj\Debug\ProyectoDeCatedraPOOFinal.FrmIngreso.resources

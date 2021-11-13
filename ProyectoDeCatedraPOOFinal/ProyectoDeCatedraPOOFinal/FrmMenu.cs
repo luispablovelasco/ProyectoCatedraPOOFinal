@@ -17,14 +17,28 @@ namespace ProyectoDeCatedraPOOFinal
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void btnIngreso_Click(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Minimized;
+            FrmMenuIngreso frm = new FrmMenuIngreso();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            FrmVerRegistros frm = new FrmVerRegistros();
+            frm.Show();
+            this.Hide();
         }
     }
 }
