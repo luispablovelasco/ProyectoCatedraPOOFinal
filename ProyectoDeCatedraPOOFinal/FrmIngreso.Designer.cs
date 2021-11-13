@@ -31,14 +31,14 @@ namespace ProyectoDeCatedraPOOFinal
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmIngreso));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties37 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
@@ -52,15 +52,15 @@ namespace ProyectoDeCatedraPOOFinal
             this.label5 = new System.Windows.Forms.Label();
             this.cbClasificacion = new Guna.UI.WinForms.GunaComboBox();
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.cbDescripcion = new Guna.UI.WinForms.GunaComboBox();
             this.bunifuGroupBox2 = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.lbNombreFoto = new System.Windows.Forms.Label();
-            this.bunifuGroupBox3 = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAgregarFoto = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.lbNombreFoto = new System.Windows.Forms.Label();
+            this.cbDescripcion = new Guna.UI.WinForms.GunaComboBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.bunifuGroupBox3 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.btnVolverMenu = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnIngresar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -163,26 +163,26 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtNomComun.Modified = false;
             this.txtNomComun.Multiline = false;
             this.txtNomComun.Name = "txtNomComun";
-            stateProperties33.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties33.FillColor = System.Drawing.Color.Empty;
-            stateProperties33.ForeColor = System.Drawing.Color.Empty;
-            stateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomComun.OnActiveState = stateProperties33;
-            stateProperties34.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties34.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNomComun.OnDisabledState = stateProperties34;
-            stateProperties35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties35.FillColor = System.Drawing.Color.Empty;
-            stateProperties35.ForeColor = System.Drawing.Color.Empty;
-            stateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomComun.OnHoverState = stateProperties35;
-            stateProperties36.BorderColor = System.Drawing.Color.Silver;
-            stateProperties36.FillColor = System.Drawing.Color.White;
-            stateProperties36.ForeColor = System.Drawing.Color.Empty;
-            stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomComun.OnIdleState = stateProperties36;
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomComun.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNomComun.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomComun.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomComun.OnIdleState = stateProperties12;
             this.txtNomComun.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.txtNomComun.PasswordChar = '\0';
             this.txtNomComun.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -256,26 +256,26 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtNomCientifico.Modified = false;
             this.txtNomCientifico.Multiline = false;
             this.txtNomCientifico.Name = "txtNomCientifico";
-            stateProperties37.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties37.FillColor = System.Drawing.Color.Empty;
-            stateProperties37.ForeColor = System.Drawing.Color.Empty;
-            stateProperties37.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomCientifico.OnActiveState = stateProperties37;
-            stateProperties38.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties38.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties38.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNomCientifico.OnDisabledState = stateProperties38;
-            stateProperties39.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties39.FillColor = System.Drawing.Color.Empty;
-            stateProperties39.ForeColor = System.Drawing.Color.Empty;
-            stateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomCientifico.OnHoverState = stateProperties39;
-            stateProperties40.BorderColor = System.Drawing.Color.Silver;
-            stateProperties40.FillColor = System.Drawing.Color.White;
-            stateProperties40.ForeColor = System.Drawing.Color.Empty;
-            stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomCientifico.OnIdleState = stateProperties40;
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomCientifico.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNomCientifico.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomCientifico.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomCientifico.OnIdleState = stateProperties16;
             this.txtNomCientifico.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.txtNomCientifico.PasswordChar = '\0';
             this.txtNomCientifico.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -359,25 +359,6 @@ namespace ProyectoDeCatedraPOOFinal
             this.bunifuGroupBox1.TabStop = false;
             this.bunifuGroupBox1.Text = "Datos Generales";
             // 
-            // cbDescripcion
-            // 
-            this.cbDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.cbDescripcion.BaseColor = System.Drawing.Color.White;
-            this.cbDescripcion.BorderColor = System.Drawing.Color.Silver;
-            this.cbDescripcion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbDescripcion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDescripcion.FocusedColor = System.Drawing.Color.Empty;
-            this.cbDescripcion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDescripcion.ForeColor = System.Drawing.Color.Black;
-            this.cbDescripcion.FormattingEnabled = true;
-            this.cbDescripcion.Location = new System.Drawing.Point(339, 142);
-            this.cbDescripcion.Name = "cbDescripcion";
-            this.cbDescripcion.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cbDescripcion.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbDescripcion.Radius = 10;
-            this.cbDescripcion.Size = new System.Drawing.Size(260, 32);
-            this.cbDescripcion.TabIndex = 18;
-            // 
             // bunifuGroupBox2
             // 
             this.bunifuGroupBox2.BorderColor = System.Drawing.Color.LightGray;
@@ -397,34 +378,15 @@ namespace ProyectoDeCatedraPOOFinal
             this.bunifuGroupBox2.TabStop = false;
             this.bunifuGroupBox2.Text = "Foto";
             // 
-            // openFileDialog1
+            // pictureBox1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // lbNombreFoto
-            // 
-            this.lbNombreFoto.AutoSize = true;
-            this.lbNombreFoto.Location = new System.Drawing.Point(63, 37);
-            this.lbNombreFoto.Name = "lbNombreFoto";
-            this.lbNombreFoto.Size = new System.Drawing.Size(57, 21);
-            this.lbNombreFoto.TabIndex = 0;
-            this.lbNombreFoto.Text = "label6";
-            // 
-            // bunifuGroupBox3
-            // 
-            this.bunifuGroupBox3.BorderColor = System.Drawing.Color.LightGray;
-            this.bunifuGroupBox3.BorderRadius = 20;
-            this.bunifuGroupBox3.BorderThickness = 1;
-            this.bunifuGroupBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuGroupBox3.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuGroupBox3.LabelIndent = 10;
-            this.bunifuGroupBox3.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox3.Location = new System.Drawing.Point(16, 369);
-            this.bunifuGroupBox3.Name = "bunifuGroupBox3";
-            this.bunifuGroupBox3.Size = new System.Drawing.Size(633, 164);
-            this.bunifuGroupBox3.TabIndex = 20;
-            this.bunifuGroupBox3.TabStop = false;
-            this.bunifuGroupBox3.Text = "Datos Específicos";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(33, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // btnAgregarFoto
             // 
@@ -450,6 +412,54 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnAgregarFoto.Size = new System.Drawing.Size(164, 41);
             this.btnAgregarFoto.TabIndex = 10;
             this.btnAgregarFoto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbNombreFoto
+            // 
+            this.lbNombreFoto.AutoSize = true;
+            this.lbNombreFoto.Location = new System.Drawing.Point(63, 37);
+            this.lbNombreFoto.Name = "lbNombreFoto";
+            this.lbNombreFoto.Size = new System.Drawing.Size(57, 21);
+            this.lbNombreFoto.TabIndex = 0;
+            this.lbNombreFoto.Text = "label6";
+            // 
+            // cbDescripcion
+            // 
+            this.cbDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.cbDescripcion.BaseColor = System.Drawing.Color.White;
+            this.cbDescripcion.BorderColor = System.Drawing.Color.Silver;
+            this.cbDescripcion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbDescripcion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDescripcion.FocusedColor = System.Drawing.Color.Empty;
+            this.cbDescripcion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDescripcion.ForeColor = System.Drawing.Color.Black;
+            this.cbDescripcion.FormattingEnabled = true;
+            this.cbDescripcion.Location = new System.Drawing.Point(339, 142);
+            this.cbDescripcion.Name = "cbDescripcion";
+            this.cbDescripcion.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbDescripcion.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbDescripcion.Radius = 10;
+            this.cbDescripcion.Size = new System.Drawing.Size(260, 32);
+            this.cbDescripcion.TabIndex = 18;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // bunifuGroupBox3
+            // 
+            this.bunifuGroupBox3.BorderColor = System.Drawing.Color.LightGray;
+            this.bunifuGroupBox3.BorderRadius = 20;
+            this.bunifuGroupBox3.BorderThickness = 1;
+            this.bunifuGroupBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuGroupBox3.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuGroupBox3.LabelIndent = 10;
+            this.bunifuGroupBox3.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
+            this.bunifuGroupBox3.Location = new System.Drawing.Point(16, 369);
+            this.bunifuGroupBox3.Name = "bunifuGroupBox3";
+            this.bunifuGroupBox3.Size = new System.Drawing.Size(633, 164);
+            this.bunifuGroupBox3.TabIndex = 20;
+            this.bunifuGroupBox3.TabStop = false;
+            this.bunifuGroupBox3.Text = "Datos Específicos";
             // 
             // btnVolverMenu
             // 
@@ -502,16 +512,6 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnIngresar.TabIndex = 21;
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 21);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // FrmIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
@@ -524,7 +524,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmIngreso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmIngreso";
@@ -542,28 +542,27 @@ namespace ProyectoDeCatedraPOOFinal
         }
 
         #endregion
-
-        private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnCerrar;
-        private Bunifu.Framework.UI.BunifuElipse frmElipse;
-        private Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox1;
-        private Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox2;
-        private System.Windows.Forms.Label lbNombreFoto;
-        private Guna.UI.WinForms.GunaComboBox cbDescripcion;
-        private System.Windows.Forms.Label label2;
-        private Bunifu.UI.WinForms.BunifuTextBox txtNomComun;
-        private Guna.UI.WinForms.GunaComboBox cbClasificacion;
-        private Bunifu.UI.WinForms.BunifuTextBox txtNomCientifico;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnVolverMenu;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnAgregarFoto;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnIngresar;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        public Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox3;
+        protected Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
+        protected System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.PictureBox btnMinimizar;
+        protected System.Windows.Forms.PictureBox btnCerrar;
+        protected Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox1;
+        protected Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox2;
+        protected System.Windows.Forms.Label lbNombreFoto;
+        protected Guna.UI.WinForms.GunaComboBox cbDescripcion;
+        protected System.Windows.Forms.Label label2;
+        protected Bunifu.UI.WinForms.BunifuTextBox txtNomComun;
+        protected Guna.UI.WinForms.GunaComboBox cbClasificacion;
+        protected Bunifu.UI.WinForms.BunifuTextBox txtNomCientifico;
+        protected System.Windows.Forms.Label label4;
+        protected System.Windows.Forms.Label label3;
+        protected System.Windows.Forms.Label label5;
+        protected Bunifu.Framework.UI.BunifuThinButton2 btnVolverMenu;
+        protected Bunifu.Framework.UI.BunifuThinButton2 btnAgregarFoto;
+        protected Bunifu.Framework.UI.BunifuThinButton2 btnIngresar;
+        protected System.Windows.Forms.PictureBox pictureBox1;
+        protected Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox3;
+        protected Bunifu.Framework.UI.BunifuElipse frmElipse;
+        protected System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
