@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ProyectoDeCatedraPOOFinal
 {
@@ -36,9 +37,35 @@ namespace ProyectoDeCatedraPOOFinal
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-            FrmVerRegistros frm = new FrmVerRegistros();
-            frm.Show();
-            this.Hide();
+            string folder = Application.StartupPath + @"\Registros";
+            if (Directory.Exists(folder))
+            {
+                string[] archivos = Directory.GetFiles(folder, "*.txt");
+                int cantArchivos = archivos.Length;
+
+                if (cantArchivos > 0)
+                {
+                    if(cantArchivos == 1)
+                    {
+                        MessageBox.Show("Existe solamente un archivo");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Existen " + cantArchivos + " archivos");
+                    }
+                    FrmVerRegistros frm = new FrmVerRegistros(cantArchivos);
+                    frm.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("No hay animales ingresados aún");
+                }
+            }
+            else
+            {
+                MessageBox.Show("No hay animales ingresados aún");
+            }
         }
     }
 }

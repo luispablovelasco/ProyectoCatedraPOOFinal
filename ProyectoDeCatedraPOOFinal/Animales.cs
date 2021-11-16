@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ProyectoDeCatedraPOOFinal
 {
@@ -24,50 +25,50 @@ namespace ProyectoDeCatedraPOOFinal
     {
         // Atributos
 
-        private string nomcomun;
-        private string nomcientifico;
-        //Espacio para el nombre de la variable para la imagen (RECUERDE PONERLA PRIVADA "private")
-        private string clasi;
+        private string nomComun;
+        private string nomCientifico;
+        private string clasificacion;
         private string habitat;
+        private string rutaFoto;
         
 
         //Propiedades con su validación
 
-        public string Nomcomun
+        public string NomComun
         {
-            get { return nomcomun; }
+            get { return nomComun; }
             set
             {
-                nomcomun = value;
-                if (nomcomun == "")
+                nomComun = value;
+                if (nomComun == "")
                 {
-                    throw new Exception("Debe llenar el campo -Nombre común-");
+                    throw new Exception("Debe indicar el nombre común");
                 }
             }
         }
 
-        public string Nomcinetifico
+        public string NomCientifico
         {
-            get { return nomcientifico; }
+            get { return nomCientifico; }
             set
             {
-                nomcientifico = value;
-                if (nomcientifico == "")
+                nomCientifico = value;
+                if (nomCientifico == "")
                 {
-                    throw new Exception("Debe de llenar el campo -Nombre Cientifico-");
+                    throw new Exception("Debe indicar el nombre científico-");
                 }
             }
         }
 
-        public string Clasi
+        public string Clasificacion
         {
-            get { return clasi; }
+            get { return clasificacion; }
             set
             {
-                clasi = value;
-                if (clasi == "")
+                clasificacion = value;
+                if (value == "")
                 {
-                    throw new Exception("Debe de llenar el campo -Clasificación-");
+                    throw new Exception("Debe indicar la clasificación");
                 }
             }
         }
@@ -80,10 +81,34 @@ namespace ProyectoDeCatedraPOOFinal
                 habitat = value;
                 if (habitat == "")
                 {
-                    throw new Exception("Debe de llenar el campo -Habitat-");
+                    throw new Exception("Debe indicar el habitat");
                 }
             }
         }
+        public string RutaFoto
+        {
+            get { return rutaFoto; }
+            set
+            {
+                rutaFoto = value;
+                if (rutaFoto == "")
+                {
+                    throw new Exception("Debe añadir la foto");
+                }
+            }
+        }
+        public string guardar(string rutaInicial)
+        {
+            string folder = rutaInicial + @"\Registros";
+            if (!Directory.Exists(folder))
+            {
+                Directory.CreateDirectory(folder);
+            }
+            return folder;
+        }
+        public virtual void guardarDatos(string folder)
+        {
 
+        }
     }
 }

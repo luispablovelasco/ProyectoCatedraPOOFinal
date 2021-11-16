@@ -31,14 +31,18 @@ namespace ProyectoDeCatedraPOOFinal
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmIngreso));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
@@ -50,23 +54,26 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtNomCientifico = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbClasificacion = new Guna.UI.WinForms.GunaComboBox();
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.cbClasificacion = new System.Windows.Forms.ComboBox();
+            this.cbHabitat = new System.Windows.Forms.ComboBox();
             this.bunifuGroupBox2 = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtRutaFoto = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.fotoAnimal = new System.Windows.Forms.PictureBox();
             this.btnAgregarFoto = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.lbNombreFoto = new System.Windows.Forms.Label();
-            this.cbDescripcion = new Guna.UI.WinForms.GunaComboBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.bunifuGroupBox3 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.btnVolverMenu = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnIngresar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lbCategoria = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.bunifuGroupBox1.SuspendLayout();
             this.bunifuGroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAnimal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
@@ -75,6 +82,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.Controls.Add(this.lbCategoria);
             this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Controls.Add(this.btnMinimizar);
             this.bunifuGradientPanel1.Controls.Add(this.btnCerrar);
@@ -86,7 +94,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(679, 40);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(925, 40);
             this.bunifuGradientPanel1.TabIndex = 6;
             // 
             // label1
@@ -102,7 +110,7 @@ namespace ProyectoDeCatedraPOOFinal
             // 
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(585, 5);
+            this.btnMinimizar.Location = new System.Drawing.Point(841, 5);
             this.btnMinimizar.Margin = new System.Windows.Forms.Padding(5);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(30, 30);
@@ -115,7 +123,7 @@ namespace ProyectoDeCatedraPOOFinal
             // 
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(625, 5);
+            this.btnCerrar.Location = new System.Drawing.Point(881, 5);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(5);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(30, 30);
@@ -163,26 +171,26 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtNomComun.Modified = false;
             this.txtNomComun.Multiline = false;
             this.txtNomComun.Name = "txtNomComun";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomComun.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNomComun.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomComun.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomComun.OnIdleState = stateProperties12;
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomComun.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNomComun.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomComun.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomComun.OnIdleState = stateProperties16;
             this.txtNomComun.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.txtNomComun.PasswordChar = '\0';
             this.txtNomComun.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -256,26 +264,26 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtNomCientifico.Modified = false;
             this.txtNomCientifico.Multiline = false;
             this.txtNomCientifico.Name = "txtNomCientifico";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomCientifico.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNomCientifico.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomCientifico.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomCientifico.OnIdleState = stateProperties16;
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomCientifico.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNomCientifico.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomCientifico.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomCientifico.OnIdleState = stateProperties20;
             this.txtNomCientifico.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.txtNomCientifico.PasswordChar = '\0';
             this.txtNomCientifico.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -300,7 +308,7 @@ namespace ProyectoDeCatedraPOOFinal
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(335, 118);
+            this.label4.Location = new System.Drawing.Point(335, 169);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(192, 21);
             this.label4.TabIndex = 14;
@@ -309,41 +317,21 @@ namespace ProyectoDeCatedraPOOFinal
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 118);
+            this.label5.Location = new System.Drawing.Point(16, 169);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(108, 21);
             this.label5.TabIndex = 12;
             this.label5.Text = "Clasificación";
-            // 
-            // cbClasificacion
-            // 
-            this.cbClasificacion.BackColor = System.Drawing.Color.Transparent;
-            this.cbClasificacion.BaseColor = System.Drawing.Color.White;
-            this.cbClasificacion.BorderColor = System.Drawing.Color.Silver;
-            this.cbClasificacion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbClasificacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbClasificacion.FocusedColor = System.Drawing.Color.Empty;
-            this.cbClasificacion.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.cbClasificacion.ForeColor = System.Drawing.Color.Black;
-            this.cbClasificacion.FormattingEnabled = true;
-            this.cbClasificacion.Location = new System.Drawing.Point(20, 142);
-            this.cbClasificacion.Name = "cbClasificacion";
-            this.cbClasificacion.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cbClasificacion.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbClasificacion.Radius = 10;
-            this.cbClasificacion.Size = new System.Drawing.Size(260, 31);
-            this.cbClasificacion.TabIndex = 16;
             // 
             // bunifuGroupBox1
             // 
             this.bunifuGroupBox1.BorderColor = System.Drawing.Color.LightGray;
             this.bunifuGroupBox1.BorderRadius = 20;
             this.bunifuGroupBox1.BorderThickness = 1;
-            this.bunifuGroupBox1.Controls.Add(this.bunifuGroupBox2);
-            this.bunifuGroupBox1.Controls.Add(this.cbDescripcion);
+            this.bunifuGroupBox1.Controls.Add(this.cbClasificacion);
+            this.bunifuGroupBox1.Controls.Add(this.cbHabitat);
             this.bunifuGroupBox1.Controls.Add(this.label2);
             this.bunifuGroupBox1.Controls.Add(this.txtNomComun);
-            this.bunifuGroupBox1.Controls.Add(this.cbClasificacion);
             this.bunifuGroupBox1.Controls.Add(this.txtNomCientifico);
             this.bunifuGroupBox1.Controls.Add(this.label4);
             this.bunifuGroupBox1.Controls.Add(this.label3);
@@ -359,34 +347,148 @@ namespace ProyectoDeCatedraPOOFinal
             this.bunifuGroupBox1.TabStop = false;
             this.bunifuGroupBox1.Text = "Datos Generales";
             // 
+            // cbClasificacion
+            // 
+            this.cbClasificacion.DropDownHeight = 120;
+            this.cbClasificacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbClasificacion.FormattingEnabled = true;
+            this.cbClasificacion.IntegralHeight = false;
+            this.cbClasificacion.Location = new System.Drawing.Point(20, 196);
+            this.cbClasificacion.Name = "cbClasificacion";
+            this.cbClasificacion.Size = new System.Drawing.Size(260, 29);
+            this.cbClasificacion.TabIndex = 20;
+            // 
+            // cbHabitat
+            // 
+            this.cbHabitat.DropDownHeight = 120;
+            this.cbHabitat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbHabitat.FormattingEnabled = true;
+            this.cbHabitat.IntegralHeight = false;
+            this.cbHabitat.Items.AddRange(new object[] {
+            "tundra",
+            "taiga",
+            "montaña",
+            "planicie",
+            "bosque",
+            "pantano",
+            "jungla",
+            "savana",
+            "playa",
+            "desierto",
+            "río",
+            "océano",
+            "mar",
+            "lago"});
+            this.cbHabitat.Location = new System.Drawing.Point(339, 196);
+            this.cbHabitat.Name = "cbHabitat";
+            this.cbHabitat.Size = new System.Drawing.Size(260, 29);
+            this.cbHabitat.TabIndex = 19;
+            // 
             // bunifuGroupBox2
             // 
             this.bunifuGroupBox2.BorderColor = System.Drawing.Color.LightGray;
             this.bunifuGroupBox2.BorderRadius = 20;
             this.bunifuGroupBox2.BorderThickness = 1;
-            this.bunifuGroupBox2.Controls.Add(this.pictureBox1);
+            this.bunifuGroupBox2.Controls.Add(this.txtRutaFoto);
+            this.bunifuGroupBox2.Controls.Add(this.fotoAnimal);
             this.bunifuGroupBox2.Controls.Add(this.btnAgregarFoto);
-            this.bunifuGroupBox2.Controls.Add(this.lbNombreFoto);
             this.bunifuGroupBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuGroupBox2.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox2.LabelIndent = 10;
             this.bunifuGroupBox2.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox2.Location = new System.Drawing.Point(20, 188);
+            this.bunifuGroupBox2.Location = new System.Drawing.Point(674, 57);
             this.bunifuGroupBox2.Name = "bunifuGroupBox2";
-            this.bunifuGroupBox2.Size = new System.Drawing.Size(579, 84);
+            this.bunifuGroupBox2.Size = new System.Drawing.Size(219, 292);
             this.bunifuGroupBox2.TabIndex = 19;
             this.bunifuGroupBox2.TabStop = false;
             this.bunifuGroupBox2.Text = "Foto";
             // 
-            // pictureBox1
+            // txtRutaFoto
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 21);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.txtRutaFoto.AcceptsReturn = false;
+            this.txtRutaFoto.AcceptsTab = false;
+            this.txtRutaFoto.AnimationSpeed = 200;
+            this.txtRutaFoto.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtRutaFoto.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtRutaFoto.AutoSizeHeight = true;
+            this.txtRutaFoto.BackColor = System.Drawing.Color.Transparent;
+            this.txtRutaFoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtRutaFoto.BackgroundImage")));
+            this.txtRutaFoto.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtRutaFoto.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtRutaFoto.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtRutaFoto.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtRutaFoto.BorderRadius = 20;
+            this.txtRutaFoto.BorderThickness = 1;
+            this.txtRutaFoto.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtRutaFoto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRutaFoto.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRutaFoto.DefaultText = "";
+            this.txtRutaFoto.FillColor = System.Drawing.Color.White;
+            this.txtRutaFoto.HideSelection = true;
+            this.txtRutaFoto.IconLeft = null;
+            this.txtRutaFoto.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRutaFoto.IconPadding = 10;
+            this.txtRutaFoto.IconRight = null;
+            this.txtRutaFoto.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRutaFoto.Lines = new string[0];
+            this.txtRutaFoto.Location = new System.Drawing.Point(6, 200);
+            this.txtRutaFoto.MaxLength = 32767;
+            this.txtRutaFoto.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtRutaFoto.Modified = false;
+            this.txtRutaFoto.Multiline = true;
+            this.txtRutaFoto.Name = "txtRutaFoto";
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtRutaFoto.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtRutaFoto.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtRutaFoto.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtRutaFoto.OnIdleState = stateProperties24;
+            this.txtRutaFoto.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.txtRutaFoto.PasswordChar = '\0';
+            this.txtRutaFoto.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtRutaFoto.PlaceholderText = "";
+            this.txtRutaFoto.ReadOnly = true;
+            this.txtRutaFoto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtRutaFoto.SelectedText = "";
+            this.txtRutaFoto.SelectionLength = 0;
+            this.txtRutaFoto.SelectionStart = 0;
+            this.txtRutaFoto.ShortcutsEnabled = true;
+            this.txtRutaFoto.Size = new System.Drawing.Size(207, 35);
+            this.txtRutaFoto.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtRutaFoto.TabIndex = 12;
+            this.txtRutaFoto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtRutaFoto.TextMarginBottom = 0;
+            this.txtRutaFoto.TextMarginLeft = 3;
+            this.txtRutaFoto.TextMarginTop = 1;
+            this.txtRutaFoto.TextPlaceholder = "";
+            this.txtRutaFoto.UseSystemPasswordChar = false;
+            this.txtRutaFoto.WordWrap = true;
+            // 
+            // fotoAnimal
+            // 
+            this.fotoAnimal.ErrorImage = ((System.Drawing.Image)(resources.GetObject("fotoAnimal.ErrorImage")));
+            this.fotoAnimal.Image = ((System.Drawing.Image)(resources.GetObject("fotoAnimal.Image")));
+            this.fotoAnimal.InitialImage = ((System.Drawing.Image)(resources.GetObject("fotoAnimal.InitialImage")));
+            this.fotoAnimal.Location = new System.Drawing.Point(31, 35);
+            this.fotoAnimal.Name = "fotoAnimal";
+            this.fotoAnimal.Size = new System.Drawing.Size(166, 155);
+            this.fotoAnimal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fotoAnimal.TabIndex = 11;
+            this.fotoAnimal.TabStop = false;
             // 
             // btnAgregarFoto
             // 
@@ -406,40 +508,13 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnAgregarFoto.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(156)))), ((int)(((byte)(29)))));
             this.btnAgregarFoto.IdleForecolor = System.Drawing.Color.White;
             this.btnAgregarFoto.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(156)))), ((int)(((byte)(29)))));
-            this.btnAgregarFoto.Location = new System.Drawing.Point(376, 24);
+            this.btnAgregarFoto.Location = new System.Drawing.Point(31, 243);
             this.btnAgregarFoto.Margin = new System.Windows.Forms.Padding(5);
             this.btnAgregarFoto.Name = "btnAgregarFoto";
             this.btnAgregarFoto.Size = new System.Drawing.Size(164, 41);
             this.btnAgregarFoto.TabIndex = 10;
             this.btnAgregarFoto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbNombreFoto
-            // 
-            this.lbNombreFoto.AutoSize = true;
-            this.lbNombreFoto.Location = new System.Drawing.Point(63, 37);
-            this.lbNombreFoto.Name = "lbNombreFoto";
-            this.lbNombreFoto.Size = new System.Drawing.Size(57, 21);
-            this.lbNombreFoto.TabIndex = 0;
-            this.lbNombreFoto.Text = "label6";
-            // 
-            // cbDescripcion
-            // 
-            this.cbDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.cbDescripcion.BaseColor = System.Drawing.Color.White;
-            this.cbDescripcion.BorderColor = System.Drawing.Color.Silver;
-            this.cbDescripcion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbDescripcion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDescripcion.FocusedColor = System.Drawing.Color.Empty;
-            this.cbDescripcion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDescripcion.ForeColor = System.Drawing.Color.Black;
-            this.cbDescripcion.FormattingEnabled = true;
-            this.cbDescripcion.Location = new System.Drawing.Point(339, 142);
-            this.cbDescripcion.Name = "cbDescripcion";
-            this.cbDescripcion.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cbDescripcion.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbDescripcion.Radius = 10;
-            this.cbDescripcion.Size = new System.Drawing.Size(260, 32);
-            this.cbDescripcion.TabIndex = 18;
+            this.btnAgregarFoto.Click += new System.EventHandler(this.btnAgregarFoto_Click);
             // 
             // openFileDialog1
             // 
@@ -479,10 +554,10 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnVolverMenu.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(156)))), ((int)(((byte)(29)))));
             this.btnVolverMenu.IdleForecolor = System.Drawing.Color.White;
             this.btnVolverMenu.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(156)))), ((int)(((byte)(29)))));
-            this.btnVolverMenu.Location = new System.Drawing.Point(485, 552);
+            this.btnVolverMenu.Location = new System.Drawing.Point(674, 405);
             this.btnVolverMenu.Margin = new System.Windows.Forms.Padding(5);
             this.btnVolverMenu.Name = "btnVolverMenu";
-            this.btnVolverMenu.Size = new System.Drawing.Size(164, 41);
+            this.btnVolverMenu.Size = new System.Drawing.Size(219, 41);
             this.btnVolverMenu.TabIndex = 11;
             this.btnVolverMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnVolverMenu.Click += new System.EventHandler(this.btnVolverMenu_Click);
@@ -505,18 +580,32 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnIngresar.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(156)))), ((int)(((byte)(29)))));
             this.btnIngresar.IdleForecolor = System.Drawing.Color.White;
             this.btnIngresar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(156)))), ((int)(((byte)(29)))));
-            this.btnIngresar.Location = new System.Drawing.Point(16, 552);
+            this.btnIngresar.Location = new System.Drawing.Point(674, 456);
             this.btnIngresar.Margin = new System.Windows.Forms.Padding(5);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(164, 41);
+            this.btnIngresar.Size = new System.Drawing.Size(219, 41);
             this.btnIngresar.TabIndex = 21;
             this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // lbCategoria
+            // 
+            this.lbCategoria.AutoSize = true;
+            this.lbCategoria.Location = new System.Drawing.Point(172, 9);
+            this.lbCategoria.Name = "lbCategoria";
+            this.lbCategoria.Size = new System.Drawing.Size(105, 21);
+            this.lbCategoria.TabIndex = 5;
+            this.lbCategoria.Text = "lbCategoria";
             // 
             // FrmIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 607);
+            this.ClientSize = new System.Drawing.Size(925, 555);
+            this.Controls.Add(this.bunifuGroupBox2);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.btnVolverMenu);
             this.Controls.Add(this.bunifuGroupBox3);
@@ -524,6 +613,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmIngreso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -535,8 +625,8 @@ namespace ProyectoDeCatedraPOOFinal
             this.bunifuGroupBox1.ResumeLayout(false);
             this.bunifuGroupBox1.PerformLayout();
             this.bunifuGroupBox2.ResumeLayout(false);
-            this.bunifuGroupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAnimal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -548,11 +638,8 @@ namespace ProyectoDeCatedraPOOFinal
         protected System.Windows.Forms.PictureBox btnCerrar;
         protected Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox1;
         protected Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox2;
-        protected System.Windows.Forms.Label lbNombreFoto;
-        protected Guna.UI.WinForms.GunaComboBox cbDescripcion;
         protected System.Windows.Forms.Label label2;
         protected Bunifu.UI.WinForms.BunifuTextBox txtNomComun;
-        protected Guna.UI.WinForms.GunaComboBox cbClasificacion;
         protected Bunifu.UI.WinForms.BunifuTextBox txtNomCientifico;
         protected System.Windows.Forms.Label label4;
         protected System.Windows.Forms.Label label3;
@@ -560,9 +647,14 @@ namespace ProyectoDeCatedraPOOFinal
         protected Bunifu.Framework.UI.BunifuThinButton2 btnVolverMenu;
         protected Bunifu.Framework.UI.BunifuThinButton2 btnAgregarFoto;
         protected Bunifu.Framework.UI.BunifuThinButton2 btnIngresar;
-        protected System.Windows.Forms.PictureBox pictureBox1;
+        protected System.Windows.Forms.PictureBox fotoAnimal;
         protected Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox3;
         protected Bunifu.Framework.UI.BunifuElipse frmElipse;
         protected System.Windows.Forms.OpenFileDialog openFileDialog1;
+        protected Bunifu.UI.WinForms.BunifuTextBox txtRutaFoto;
+        protected System.Windows.Forms.ErrorProvider errorProvider1;
+        protected System.Windows.Forms.ComboBox cbHabitat;
+        protected System.Windows.Forms.ComboBox cbClasificacion;
+        protected System.Windows.Forms.Label lbCategoria;
     }
 }

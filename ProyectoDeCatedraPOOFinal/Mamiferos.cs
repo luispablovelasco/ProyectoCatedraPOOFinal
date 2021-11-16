@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ProyectoDeCatedraPOOFinal
 {
@@ -52,6 +53,25 @@ namespace ProyectoDeCatedraPOOFinal
                 {
                     throw new Exception("Debe indicar el color del pelo del mamífero");
                 }
+            }
+        }
+        public override void guardarDatos (string folder)
+        {
+            try
+            {
+                StreamWriter sw = new StreamWriter(Path.Combine(folder, this.NomComun + ".txt"));
+                sw.WriteLine(this.NomComun);
+                sw.WriteLine(this.NomCientifico);
+                sw.WriteLine(this.Clasificacion);
+                sw.WriteLine(this.Habitat);
+                sw.WriteLine(this.RutaFoto);
+                sw.WriteLine(this.cantMamas);
+                sw.WriteLine(this.colorPelo);
+                sw.WriteLine("mamifero");
+                sw.Close();
+            }
+            catch
+            {
             }
         }
     }

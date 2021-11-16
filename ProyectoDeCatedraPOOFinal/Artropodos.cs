@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ProyectoDeCatedraPOOFinal
 {
@@ -62,5 +63,24 @@ namespace ProyectoDeCatedraPOOFinal
             }
         }
 
+        public override void guardarDatos(string folder)
+        {
+            try
+            {
+                StreamWriter sw = new StreamWriter(Path.Combine(folder, this.NomComun + ".txt"));
+                sw.WriteLine(this.NomComun);
+                sw.WriteLine(this.NomCientifico);
+                sw.WriteLine(this.Clasificacion);
+                sw.WriteLine(this.Habitat);
+                sw.WriteLine(this.RutaFoto);
+                sw.WriteLine(this.CantApendices);
+                sw.WriteLine(this.TiposApendices);
+                sw.WriteLine("artropodo");
+                sw.Close();
+            }
+            catch
+            {
+            }
+        }
     }
 }

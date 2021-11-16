@@ -35,18 +35,61 @@ namespace ProyectoDeCatedraPOOFinal
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtCantAletas = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.cbTipoBranquias = new Guna.UI.WinForms.GunaComboBox();
+            this.txtCantAletas = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.cbTipoBranquias = new System.Windows.Forms.ComboBox();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.bunifuGroupBox1.SuspendLayout();
+            this.bunifuGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAnimal)).BeginInit();
             this.bunifuGroupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            // 
+            // txtNomComun
+            // 
+            this.txtNomComun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNomComun.BackgroundImage")));
+            this.txtNomComun.Lines = new string[0];
+            // 
+            // txtNomCientifico
+            // 
+            this.txtNomCientifico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNomCientifico.BackgroundImage")));
+            this.txtNomCientifico.Lines = new string[0];
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // bunifuGroupBox3
             // 
             this.bunifuGroupBox3.Controls.Add(this.cbTipoBranquias);
-            this.bunifuGroupBox3.Controls.Add(this.label6);
             this.bunifuGroupBox3.Controls.Add(this.txtCantAletas);
+            this.bunifuGroupBox3.Controls.Add(this.label6);
             this.bunifuGroupBox3.Controls.Add(this.label7);
+            // 
+            // txtRutaFoto
+            // 
+            this.txtRutaFoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtRutaFoto.BackgroundImage")));
+            this.txtRutaFoto.Lines = new string[0];
+            // 
+            // cbClasificacion
+            // 
+            this.cbClasificacion.Items.AddRange(new object[] {
+            "ciclóstomos",
+            "condrictios",
+            "osteictios",
+            "actinopterígios"});
+            // 
+            // lbCategoria
+            // 
+            this.lbCategoria.Size = new System.Drawing.Size(69, 21);
+            this.lbCategoria.Text = "(peces)";
             // 
             // label6
             // 
@@ -56,6 +99,15 @@ namespace ProyectoDeCatedraPOOFinal
             this.label6.Size = new System.Drawing.Size(164, 21);
             this.label6.TabIndex = 12;
             this.label6.Text = "Cantidad de aletas";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(344, 53);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(149, 21);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Tipo de branquias";
             // 
             // txtCantAletas
             // 
@@ -85,7 +137,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtCantAletas.IconRight = null;
             this.txtCantAletas.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCantAletas.Lines = new string[0];
-            this.txtCantAletas.Location = new System.Drawing.Point(29, 77);
+            this.txtCantAletas.Location = new System.Drawing.Point(29, 74);
             this.txtCantAletas.MaxLength = 32767;
             this.txtCantAletas.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtCantAletas.Modified = false;
@@ -123,7 +175,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtCantAletas.ShortcutsEnabled = true;
             this.txtCantAletas.Size = new System.Drawing.Size(260, 35);
             this.txtCantAletas.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtCantAletas.TabIndex = 11;
+            this.txtCantAletas.TabIndex = 20;
             this.txtCantAletas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtCantAletas.TextMarginBottom = 0;
             this.txtCantAletas.TextMarginLeft = 3;
@@ -131,42 +183,38 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtCantAletas.TextPlaceholder = "";
             this.txtCantAletas.UseSystemPasswordChar = false;
             this.txtCantAletas.WordWrap = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(344, 53);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(149, 21);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Tipo de branquias";
+            this.txtCantAletas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantAletas_KeyPress);
             // 
             // cbTipoBranquias
             // 
-            this.cbTipoBranquias.BackColor = System.Drawing.Color.Transparent;
-            this.cbTipoBranquias.BaseColor = System.Drawing.Color.White;
-            this.cbTipoBranquias.BorderColor = System.Drawing.Color.Silver;
-            this.cbTipoBranquias.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbTipoBranquias.DropDownHeight = 120;
             this.cbTipoBranquias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTipoBranquias.FocusedColor = System.Drawing.Color.Empty;
-            this.cbTipoBranquias.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTipoBranquias.ForeColor = System.Drawing.Color.Black;
             this.cbTipoBranquias.FormattingEnabled = true;
-            this.cbTipoBranquias.Location = new System.Drawing.Point(348, 77);
+            this.cbTipoBranquias.IntegralHeight = false;
+            this.cbTipoBranquias.Items.AddRange(new object[] {
+            "externas",
+            "internas"});
+            this.cbTipoBranquias.Location = new System.Drawing.Point(339, 74);
             this.cbTipoBranquias.Name = "cbTipoBranquias";
-            this.cbTipoBranquias.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cbTipoBranquias.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbTipoBranquias.Radius = 10;
-            this.cbTipoBranquias.Size = new System.Drawing.Size(260, 32);
-            this.cbTipoBranquias.TabIndex = 19;
+            this.cbTipoBranquias.Size = new System.Drawing.Size(260, 29);
+            this.cbTipoBranquias.TabIndex = 22;
             // 
             // FrmPez
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
-            this.ClientSize = new System.Drawing.Size(679, 607);
+            this.ClientSize = new System.Drawing.Size(925, 555);
             this.Name = "FrmPez";
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.bunifuGroupBox1.ResumeLayout(false);
+            this.bunifuGroupBox1.PerformLayout();
+            this.bunifuGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAnimal)).EndInit();
             this.bunifuGroupBox3.ResumeLayout(false);
             this.bunifuGroupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -174,8 +222,8 @@ namespace ProyectoDeCatedraPOOFinal
         #endregion
 
         private System.Windows.Forms.Label label6;
-        private Bunifu.UI.WinForms.BunifuTextBox txtCantAletas;
         private System.Windows.Forms.Label label7;
-        private Guna.UI.WinForms.GunaComboBox cbTipoBranquias;
+        private Bunifu.UI.WinForms.BunifuTextBox txtCantAletas;
+        protected System.Windows.Forms.ComboBox cbTipoBranquias;
     }
 }

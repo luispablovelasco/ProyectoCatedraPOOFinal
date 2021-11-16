@@ -30,151 +30,134 @@ namespace ProyectoDeCatedraPOOFinal
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReptil));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            this.cbTipoResp = new Guna.UI.WinForms.GunaComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtCantFosas = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.cbTipoResp = new System.Windows.Forms.ComboBox();
+            this.cbFosasCraneales = new System.Windows.Forms.ComboBox();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.bunifuGroupBox1.SuspendLayout();
+            this.bunifuGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAnimal)).BeginInit();
             this.bunifuGroupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            // 
+            // txtNomComun
+            // 
+            this.txtNomComun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNomComun.BackgroundImage")));
+            this.txtNomComun.Lines = new string[0];
+            // 
+            // txtNomCientifico
+            // 
+            this.txtNomCientifico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNomCientifico.BackgroundImage")));
+            this.txtNomCientifico.Lines = new string[0];
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // bunifuGroupBox3
             // 
+            this.bunifuGroupBox3.Controls.Add(this.cbFosasCraneales);
             this.bunifuGroupBox3.Controls.Add(this.cbTipoResp);
             this.bunifuGroupBox3.Controls.Add(this.label6);
-            this.bunifuGroupBox3.Controls.Add(this.txtCantFosas);
             this.bunifuGroupBox3.Controls.Add(this.label7);
             // 
-            // cbTipoResp
+            // txtRutaFoto
             // 
-            this.cbTipoResp.BackColor = System.Drawing.Color.Transparent;
-            this.cbTipoResp.BaseColor = System.Drawing.Color.White;
-            this.cbTipoResp.BorderColor = System.Drawing.Color.Silver;
-            this.cbTipoResp.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbTipoResp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbTipoResp.FocusedColor = System.Drawing.Color.Empty;
-            this.cbTipoResp.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTipoResp.ForeColor = System.Drawing.Color.Black;
-            this.cbTipoResp.FormattingEnabled = true;
-            this.cbTipoResp.Location = new System.Drawing.Point(348, 105);
-            this.cbTipoResp.Name = "cbTipoResp";
-            this.cbTipoResp.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cbTipoResp.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbTipoResp.Radius = 10;
-            this.cbTipoResp.Size = new System.Drawing.Size(260, 32);
-            this.cbTipoResp.TabIndex = 23;
+            this.txtRutaFoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtRutaFoto.BackgroundImage")));
+            this.txtRutaFoto.Lines = new string[0];
+            // 
+            // cbClasificacion
+            // 
+            this.cbClasificacion.Items.AddRange(new object[] {
+            "esfenodontos",
+            "quelonios",
+            "crocodilidos",
+            "ofidios",
+            "saurios"});
+            // 
+            // lbCategoria
+            // 
+            this.lbCategoria.Size = new System.Drawing.Size(77, 21);
+            this.lbCategoria.Text = "(reptiles)";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(25, 53);
+            this.label6.Location = new System.Drawing.Point(349, 64);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(278, 46);
+            this.label6.Size = new System.Drawing.Size(278, 24);
             this.label6.TabIndex = 21;
-            this.label6.Text = "Cantidad de fosas temporales en el cráneo";
-            // 
-            // txtCantFosas
-            // 
-            this.txtCantFosas.AcceptsReturn = false;
-            this.txtCantFosas.AcceptsTab = false;
-            this.txtCantFosas.AnimationSpeed = 200;
-            this.txtCantFosas.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtCantFosas.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtCantFosas.AutoSizeHeight = true;
-            this.txtCantFosas.BackColor = System.Drawing.Color.Transparent;
-            this.txtCantFosas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtCantFosas.BackgroundImage")));
-            this.txtCantFosas.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtCantFosas.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtCantFosas.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtCantFosas.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtCantFosas.BorderRadius = 20;
-            this.txtCantFosas.BorderThickness = 1;
-            this.txtCantFosas.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtCantFosas.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCantFosas.DefaultFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantFosas.DefaultText = "";
-            this.txtCantFosas.FillColor = System.Drawing.Color.White;
-            this.txtCantFosas.HideSelection = true;
-            this.txtCantFosas.IconLeft = null;
-            this.txtCantFosas.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCantFosas.IconPadding = 10;
-            this.txtCantFosas.IconRight = null;
-            this.txtCantFosas.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCantFosas.Lines = new string[0];
-            this.txtCantFosas.Location = new System.Drawing.Point(29, 102);
-            this.txtCantFosas.MaxLength = 32767;
-            this.txtCantFosas.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtCantFosas.Modified = false;
-            this.txtCantFosas.Multiline = false;
-            this.txtCantFosas.Name = "txtCantFosas";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtCantFosas.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtCantFosas.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtCantFosas.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtCantFosas.OnIdleState = stateProperties4;
-            this.txtCantFosas.Padding = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.txtCantFosas.PasswordChar = '\0';
-            this.txtCantFosas.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtCantFosas.PlaceholderText = "";
-            this.txtCantFosas.ReadOnly = false;
-            this.txtCantFosas.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtCantFosas.SelectedText = "";
-            this.txtCantFosas.SelectionLength = 0;
-            this.txtCantFosas.SelectionStart = 0;
-            this.txtCantFosas.ShortcutsEnabled = true;
-            this.txtCantFosas.Size = new System.Drawing.Size(260, 35);
-            this.txtCantFosas.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtCantFosas.TabIndex = 20;
-            this.txtCantFosas.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtCantFosas.TextMarginBottom = 0;
-            this.txtCantFosas.TextMarginLeft = 3;
-            this.txtCantFosas.TextMarginTop = 1;
-            this.txtCantFosas.TextPlaceholder = "";
-            this.txtCantFosas.UseSystemPasswordChar = false;
-            this.txtCantFosas.WordWrap = true;
+            this.label6.Text = "Fosas temporales en el cráneo";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(344, 53);
+            this.label7.Location = new System.Drawing.Point(25, 67);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(155, 21);
             this.label7.TabIndex = 22;
             this.label7.Text = "Tipo de respiración";
             // 
+            // cbTipoResp
+            // 
+            this.cbTipoResp.DropDownHeight = 120;
+            this.cbTipoResp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTipoResp.FormattingEnabled = true;
+            this.cbTipoResp.IntegralHeight = false;
+            this.cbTipoResp.Items.AddRange(new object[] {
+            "pulmonar",
+            "cutánea"});
+            this.cbTipoResp.Location = new System.Drawing.Point(29, 91);
+            this.cbTipoResp.Name = "cbTipoResp";
+            this.cbTipoResp.Size = new System.Drawing.Size(260, 29);
+            this.cbTipoResp.TabIndex = 25;
+            // 
+            // cbFosasCraneales
+            // 
+            this.cbFosasCraneales.DropDownHeight = 120;
+            this.cbFosasCraneales.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFosasCraneales.FormattingEnabled = true;
+            this.cbFosasCraneales.IntegralHeight = false;
+            this.cbFosasCraneales.Items.AddRange(new object[] {
+            "anápsidos",
+            "sinápsidos",
+            "diápsidos"});
+            this.cbFosasCraneales.Location = new System.Drawing.Point(353, 91);
+            this.cbFosasCraneales.Name = "cbFosasCraneales";
+            this.cbFosasCraneales.Size = new System.Drawing.Size(260, 29);
+            this.cbFosasCraneales.TabIndex = 26;
+            // 
             // FrmReptil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
-            this.ClientSize = new System.Drawing.Size(679, 607);
+            this.ClientSize = new System.Drawing.Size(925, 555);
             this.Name = "FrmReptil";
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.bunifuGroupBox1.ResumeLayout(false);
+            this.bunifuGroupBox1.PerformLayout();
+            this.bunifuGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAnimal)).EndInit();
             this.bunifuGroupBox3.ResumeLayout(false);
             this.bunifuGroupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaComboBox cbTipoResp;
         private System.Windows.Forms.Label label6;
-        private Bunifu.UI.WinForms.BunifuTextBox txtCantFosas;
         private System.Windows.Forms.Label label7;
+        protected System.Windows.Forms.ComboBox cbFosasCraneales;
+        protected System.Windows.Forms.ComboBox cbTipoResp;
     }
 }

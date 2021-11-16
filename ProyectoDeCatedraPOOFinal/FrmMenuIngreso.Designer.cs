@@ -68,6 +68,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnReptiles.Name = "btnReptiles";
             this.btnReptiles.Size = new System.Drawing.Size(189, 193);
             this.btnReptiles.TabIndex = 5;
+            this.btnReptiles.Click += new System.EventHandler(this.btnReptiles_Click);
             // 
             // bunifuGradientPanel1
             // 
@@ -94,7 +95,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 21);
+            this.label1.Size = new System.Drawing.Size(207, 23);
             this.label1.TabIndex = 4;
             this.label1.Text = "Ingreso de animales";
             // 
@@ -142,6 +143,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnMamiferos.Name = "btnMamiferos";
             this.btnMamiferos.Size = new System.Drawing.Size(189, 193);
             this.btnMamiferos.TabIndex = 3;
+            this.btnMamiferos.Click += new System.EventHandler(this.btnMamiferos_Click);
             // 
             // btnPeces
             // 
@@ -161,6 +163,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnPeces.Name = "btnPeces";
             this.btnPeces.Size = new System.Drawing.Size(189, 193);
             this.btnPeces.TabIndex = 6;
+            this.btnPeces.Click += new System.EventHandler(this.btnPeces_Click);
             // 
             // btnArtropodos
             // 
@@ -180,6 +183,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.btnArtropodos.Name = "btnArtropodos";
             this.btnArtropodos.Size = new System.Drawing.Size(189, 193);
             this.btnArtropodos.TabIndex = 7;
+            this.btnArtropodos.Click += new System.EventHandler(this.btnArtropodos_Click);
             // 
             // frmElipse
             // 
@@ -234,7 +238,7 @@ namespace ProyectoDeCatedraPOOFinal
             // 
             // FrmMenuIngreso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(566, 642);
             this.Controls.Add(this.btnVolverMenu);

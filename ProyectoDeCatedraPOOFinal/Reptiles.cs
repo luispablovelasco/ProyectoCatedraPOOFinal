@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ProyectoDeCatedraPOOFinal
 {
@@ -23,7 +24,7 @@ namespace ProyectoDeCatedraPOOFinal
     {
         //Atributos para la clase de animales Reptiles
         private string tipoResp; //Los reptiles pueden tener respiración pulmonar o cutánea (por medio de la piel)
-        private int cantFosas; 
+        private string cantFosas;
         /*Los reptiles se clasifican mediante la cantidad de fosas temporales en el craneo, pueden ser:
           - Sinápsidos: Con solo 1 fosa temporal
           - Anápsidos: Con ninguna fosa temporal
@@ -44,20 +45,35 @@ namespace ProyectoDeCatedraPOOFinal
             }
         }
 
-        public int CantFosas
+        public string CantFosas
         {
             get { return cantFosas; }
             set
             {
                 cantFosas = value;
-                if (Convert.ToString(cantFosas) == "")
+                if (cantFosas == "")
                 {
                     throw new Exception("Debe indicar el número de fosas que posee el reptil");
                 }
-                if (cantFosas < 0)
-                {
-                    throw new Exception("La cantidad de fosas temporales del reptil no puede ser menor a 0");
-                }
+            }
+        }
+        public override void guardarDatos(string folder)
+        {
+            try
+            {
+                StreamWriter sw = new StreamWriter(Path.Combine(folder, this.NomComun + ".txt"));
+                sw.WriteLine(this.NomComun);
+                sw.WriteLine(this.NomCientifico);
+                sw.WriteLine(this.Clasificacion);
+                sw.WriteLine(this.Habitat);
+                sw.WriteLine(this.RutaFoto);
+                sw.WriteLine(this.TipoResp);
+                sw.WriteLine(this.CantFosas);
+                sw.WriteLine("reptil");
+                sw.Close();
+            }
+            catch
+            {
             }
         }
     }

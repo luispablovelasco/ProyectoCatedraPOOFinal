@@ -42,8 +42,33 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtCantMamas = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtColorPelo = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            this.bunifuGroupBox1.SuspendLayout();
+            this.bunifuGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAnimal)).BeginInit();
             this.bunifuGroupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            // 
+            // txtNomComun
+            // 
+            this.txtNomComun.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNomComun.BackgroundImage")));
+            this.txtNomComun.Lines = new string[0];
+            // 
+            // txtNomCientifico
+            // 
+            this.txtNomCientifico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNomCientifico.BackgroundImage")));
+            this.txtNomCientifico.Lines = new string[0];
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // bunifuGroupBox3
             // 
@@ -51,6 +76,24 @@ namespace ProyectoDeCatedraPOOFinal
             this.bunifuGroupBox3.Controls.Add(this.txtCantMamas);
             this.bunifuGroupBox3.Controls.Add(this.txtColorPelo);
             this.bunifuGroupBox3.Controls.Add(this.label7);
+            // 
+            // txtRutaFoto
+            // 
+            this.txtRutaFoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtRutaFoto.BackgroundImage")));
+            this.txtRutaFoto.Lines = new string[0];
+            // 
+            // cbClasificacion
+            // 
+            this.cbClasificacion.Items.AddRange(new object[] {
+            "carnívoro",
+            "ungulados",
+            "primates",
+            "cetáceos"});
+            // 
+            // lbCategoria
+            // 
+            this.lbCategoria.Size = new System.Drawing.Size(102, 21);
+            this.lbCategoria.Text = "(mamíferos)";
             // 
             // label6
             // 
@@ -135,6 +178,7 @@ namespace ProyectoDeCatedraPOOFinal
             this.txtCantMamas.TextPlaceholder = "";
             this.txtCantMamas.UseSystemPasswordChar = false;
             this.txtCantMamas.WordWrap = true;
+            this.txtCantMamas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantMamas_KeyPress);
             // 
             // txtColorPelo
             // 
@@ -220,13 +264,22 @@ namespace ProyectoDeCatedraPOOFinal
             this.label7.TabIndex = 14;
             this.label7.Text = "Color de pelo";
             // 
-            // FrmMamiferos
+            // FrmMamifero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
-            this.ClientSize = new System.Drawing.Size(679, 607);
-            this.Name = "FrmMamiferos";
+            this.ClientSize = new System.Drawing.Size(925, 555);
+            this.Name = "FrmMamifero";
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            this.bunifuGroupBox1.ResumeLayout(false);
+            this.bunifuGroupBox1.PerformLayout();
+            this.bunifuGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.fotoAnimal)).EndInit();
             this.bunifuGroupBox3.ResumeLayout(false);
             this.bunifuGroupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }

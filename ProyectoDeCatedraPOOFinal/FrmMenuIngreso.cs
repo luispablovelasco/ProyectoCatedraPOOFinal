@@ -33,5 +33,33 @@ namespace ProyectoDeCatedraPOOFinal
             frm.Show();
             this.Hide();
         }
+
+        private void btnMamiferos_Click(object sender, EventArgs e)
+        {
+            FrmMamifero frm = new FrmMamifero();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnReptiles_Click(object sender, EventArgs e)
+        {
+            FrmReptil frm = new FrmReptil();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnPeces_Click(object sender, EventArgs e)
+        {
+            FrmPez frm = new FrmPez();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnArtropodos_Click(object sender, EventArgs e)
+        {
+            FrmArtropodo frm = new FrmArtropodo();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
